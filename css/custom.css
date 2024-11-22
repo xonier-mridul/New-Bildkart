@@ -4416,6 +4416,7 @@ header.main-header .header-sticky.active .container-fluid::before{
 	gap: 10px;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
+	overflow-wrap: break-word;
 }
 
 .screenmain::-webkit-scrollbar{

@@ -7,6 +7,9 @@ const para = document.getElementById('headerpara');
 const Overlay = document.getElementById('botoverlay')
 
 const send = ()=>{
+    if(Input.value === ""){
+        return
+    }
     let div = document.createElement('div');
     div.classList = "message";
     div.innerText = Input.value ;
