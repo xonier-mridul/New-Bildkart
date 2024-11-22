@@ -4411,6 +4411,15 @@ header.main-header .header-sticky.active .container-fluid::before{
 .screenmain{
 	height: 200px;
     padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+.screenmain::-webkit-scrollbar{
+	display: none;
 }
 
 .screenheader{
@@ -4464,6 +4473,23 @@ header.main-header .header-sticky.active .container-fluid::before{
 
 .botoverlayshow{
 	display: block;
+}
+
+.message{
+	padding: 8px 14px;
+	border-radius: 8px 0 8px 8px;
+	background-image: linear-gradient(263deg, var(--accent-color) 0.16%, var(--dark-color) 99.84%);
+	color: white;
+	width: 80%;
+	align-self: flex-end;
+}
+
+.botclass{
+	padding: 8px 14px;
+	border-radius: 0px 8px 8px 8px;
+	background-image: linear-gradient(263deg,var(--dark-color) 99.84% , var(--accent-color) 0.16%);
+	color: white;
+	width: 80%;
 }
 
 /************************************/

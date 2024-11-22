@@ -12,6 +12,14 @@ const send = ()=>{
     div.innerText = Input.value ;
     botScreen.appendChild(div);
     Input.value = ""
+    setTimeout(() => {
+        let bot = document.createElement('div');
+        bot.classList = "botclass";
+        bot.innerHTML = "Sorry, I'm under developmet &#128531;"
+        botScreen.appendChild(bot)
+        botScreen.scrollTop = botScreen.scrollHeight
+    }, 1200);
+    botScreen.scrollTop = botScreen.scrollHeight
 }
 
 Send.addEventListener('click',send)
@@ -20,7 +28,7 @@ chatbot.addEventListener('click', ()=>{
     const minut = new Date().getMinutes()
     const hours = new Date().getHours()
     const newminut = minut <= 9 ? `0${minut}` : minut
-    const newhours = minut <= 9 ? `0${hours}` : hours
+    const newhours = hours <= 9 ? `0${hours}` : hours
 
     let ampm = hours > 12 ? 'pm' : 'am';
     para.innerText = `we'll back today at ${newhours}:${newminut} ${ampm}`
