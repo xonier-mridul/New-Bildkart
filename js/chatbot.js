@@ -28,12 +28,11 @@ chatbot.addEventListener('click', ()=>{
     Overlay.classList.toggle('botoverlayshow')
 })
 
-
-
-Input.addEventListener('onkeydown',(e)=>{
-    if(e.key == "Enter"){
+Input.addEventListener('keydown',(e)=>{
+    if(e.key === "Enter"){
+        send()
     }
-    console.log(e.key)
+    
 })
 
 Overlay.addEventListener('click',()=>{
